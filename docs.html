@@ -19,6 +19,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet">
 </head>
     <body>
+        <!-- WindowBar -->
+    <div class="title-bar">
+        <div class="title-bar-text">HacOS
+        </div>
+        <div class="title-bar-controls">
+            <button aria-label="Maximize" onclick="toggleFullScreen()"></button>
+        </div>
+      </div>
 
+    <div class="welcomeSection">
+        <div class="blinker">Wake up, it's hackin' time!</div>
+    </div>
+    <!-- WindowBar End -->
+
+    <!-- WindowContent -->
+    <div class="window">
+        <div class="title-bar">
+          <div class="title-bar-text">
+            Game Documentation
+          </div>
+        </div>
+
+        <div class="windowContent">
+            <img id="compGIF" src="resources/mac.png">
+            
+            <div class="description" style="padding: 20px;">
+                  Here is some tech stuff about your computer — 
+                  most important tool in the game. There are 
+                  newest CPU Steud Sandium and 128 MB of DDR1 RAM inside. 
+                  Your machine is working on CalyxOS — most powerful 
+                  Linux distro for hackers. <span class="highlight">Btw look at the picture of your PC at the left. It's beautiful, isn't it?</span>   
+            </div>
+        </div>
+        
+        <div class="singleButtonContainer">
+            <button onclick="location.href='preorder.html';">I want to buy it immediately!</button>
+        </div>
+    </div>
+    <!-- WindowContent End -->
+
+    <!-- BottomNavbar -->
+    <nav class="navbar">
+        <div class="navbarButtonContainer">
+            <button onclick="location.href='index.html';">
+                Main
+            </button>
+
+            <button class="activeButton" onclick="location.href='docs.html';">
+                Docs
+            </button>
+
+            <button onclick="location.href='preorder.html';">
+                Pre-Order
+            </button>
+        </div>      
+    </nav>
+    <!-- BottomNavbar End -->
     </body>
 </html>
