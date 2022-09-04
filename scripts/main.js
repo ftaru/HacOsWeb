@@ -1,3 +1,29 @@
+function calculatePrice() {
+    const selectElement = document.querySelector('.versionSelect');
+
+    selectElement.addEventListener('change', (event) => {
+        const result = document.querySelector('#finalPrice');
+        var fPrice = calc(event.target.value);
+        result.textContent = `It will cost ${fPrice} $`;
+    });
+}
+
+function calc(value) {
+    if (value == "st") {
+        return 20;
+    } else if (value == "adv") {
+        return 40;
+    } else if (value == "prem") {
+        return 60;
+    } else {
+        return 80;
+    }
+}
+
+function congrats(){
+    alert("Congratulations! You've just pre-ordered a game!")
+}
+
 function toggleFullScreen() {
     if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
     (!document.mozFullScreen && !document.webkitIsFullScreen)) {
@@ -19,11 +45,4 @@ function toggleFullScreen() {
     }  
 }
 
-function calculatePrice() {
-    const selectElement = document.querySelector('.versionSelect');
-
-    selectElement.addEventListener('change', (event) => {
-        const result = document.querySelector('.finalPrice');
-        result.textContent = `You like ${event.target.value} $`;
-    });
-}
+calculatePrice()

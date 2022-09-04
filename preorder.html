@@ -7,8 +7,6 @@
         HacOS Game | Pre-order
     </title>
 
-    <script src="scripts/main.js"></script>
-
     <!-- Import styles -->
     <link rel="stylesheet" href="https://unpkg.com/98.css" />
     <link rel="stylesheet" href="styles/main.css">
@@ -36,10 +34,10 @@
         <div class="availability">
             <div class="availabilityText">Available soon on:</div>
             <div class="bigButtonBlock">
-                <button>MacOS</button>
-                <button>Windows</button>
-                <button>Linux</button>
-                <button>PlayStation</button>
+                <button class="activeButton">MacOS</button>
+                <button class="activeButton">Windows</button>
+                <button class="activeButton">Linux</button>
+                <button class="activeButton">PlayStation</button>
             </div>
         </div>
 
@@ -76,9 +74,9 @@
                           </select>
                     </div>
                 </div>
-                <div class="finalPrice">...</div>
+                <p id="finalPrice">It will cost 20 $</p>
                 <div class="singleButtonContainer">
-                    <button>Buy rn!</button>
+                    <button onclick="congrats()">Buy rn!</button>
                 </div>
             </div>
             
@@ -102,5 +100,6 @@
             </div>      
         </nav>
         <!-- BottomNavbar End -->
+        <script src="scripts/main.js"></script>
     </body>
 </html>

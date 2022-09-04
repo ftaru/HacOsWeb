@@ -253,11 +253,11 @@ body {
 }
 
 .OptionsNames,
-.finalPrice {
+#finalPrice {
     font-size: 20px;
 }
 
-.finalPrice {
+#finalPrice {
     text-align: center;
     align-items: center;
     justify-content: space-between;
