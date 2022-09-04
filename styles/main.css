@@ -84,20 +84,21 @@ body {
     font-size: 21px;
 }
 
-.separator {
-    background: violet;
-    margin: 10px;
-}
-
 #compGIF {
     height: 200px; 
     width: auto; 
     justify-self: center;
 }
 
-.buttonContainer {
+.doubleButtonContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+.singleButtonContainer {
+    display: grid;
+    grid-template-columns: 1fr;
     padding: 20px;
 }
 
@@ -136,4 +137,130 @@ body {
 .activeButton {
   box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey;
   padding: 2px 11px 0 13px;
+}
+
+.highlight {
+    background: linear-gradient( rgba(254, 81, 1, 0.55), rgba(255, 21, 0, 0.55) );
+}
+
+.trademark,
+.review {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+
+    font-family: "Pixelated MS Sans Serif",Arial;
+    -webkit-font-smoothing: none;
+    color: white;
+}
+
+.trademark {
+    font-size: 16px;
+    margin-bottom: 150px;
+    color: silver;
+}
+
+#reviewText {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 28px;
+}
+
+#reviewPublisher {
+    font-size: 22px;
+    color: silver;
+}
+
+#reviewPublisher,
+#tm {
+    padding-top: 20px;
+}
+
+.logos {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#kojimaLogo {
+    height: 200px; 
+    width: auto; 
+    justify-self: center;
+}
+
+.availabilityText {
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: "Pixelated MS Sans Serif",Arial;
+    -webkit-font-smoothing: none;
+    color: white;
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+
+.bigButtonBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bigButtonBlock button {
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.availability {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#buyWindowContent {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (max-width: 480px) {
+    .buyWindowContent {
+        padding: 20px;
+        grid-template-columns: 1fr;
+    }
+}
+.OptionsButtons,
+.OptionsNames {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    padding-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.OptionsNames,
+.finalPrice {
+    font-size: 20px;
+}
+
+.finalPrice {
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
 }

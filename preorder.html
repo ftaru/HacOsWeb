@@ -4,7 +4,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
     <title>
-        HacOS Game | Docs
+        HacOS Game | Pre-order
     </title>
 
     <script src="scripts/main.js"></script>
@@ -19,6 +19,88 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet">
 </head>
     <body>
+        <!-- WindowBar -->
+        <div class="title-bar">
+            <div class="title-bar-text">HacOS
+            </div>
+            <div class="title-bar-controls">
+                <button aria-label="Maximize" onclick="toggleFullScreen()"></button>
+            </div>
+        </div>
 
+        <div class="welcomeSection">
+            <div class="blinker">Wake up, it's hackin' time!</div>
+        </div>
+        <!-- WindowBar End -->
+
+        <div class="availability">
+            <div class="availabilityText">Available soon on:</div>
+            <div class="bigButtonBlock">
+                <button>MacOS</button>
+                <button>Windows</button>
+                <button>Linux</button>
+                <button>PlayStation</button>
+            </div>
+        </div>
+
+
+        <!-- WindowContent -->
+        <div class="window">
+            <div class="title-bar">
+                <div class="title-bar-text">
+                    Pre-order
+                </div>
+            </div>
+
+            <div id="buyWindowContent">
+                <div class="OptionsNames">
+                    <div>Platform</div>
+                    <div>Version</div>
+                </div>
+
+                <div class="OptionsButtons">
+                    <div>
+                        <select class="platformSelect">
+                            <option value="win">Windows</option>
+                            <option value="lin">Linux</option>
+                            <option value="mac">MacOS</option>
+                            <option value="ps">PlayStation</option>
+                          </select>
+                    </div>
+                    <div>
+                        <select class="versionSelect">
+                            <option value="st">Standard</option>
+                            <option value="adv">Advanced</option>
+                            <option value="prem">Premium</option>
+                            <option value="del">Deluxe</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="finalPrice">...</div>
+                <div class="singleButtonContainer">
+                    <button>Buy rn!</button>
+                </div>
+            </div>
+            
+        </div>
+        <!-- WindowContent End -->
+
+        <!-- BottomNavbar -->
+        <nav class="navbar">
+            <div class="navbarButtonContainer">
+                <button onclick="location.href='index.html';">
+                    Main
+                </button>
+
+                <button onclick="location.href='docs.html';">
+                    Docs
+                </button>
+
+                <button class="activeButton" onclick="location.href='preorder.html';">
+                    Pre-Order
+                </button>
+            </div>      
+        </nav>
+        <!-- BottomNavbar End -->
     </body>
 </html>

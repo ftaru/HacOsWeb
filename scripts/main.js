@@ -18,3 +18,12 @@ function toggleFullScreen() {
         }  
     }  
 }
+
+function calculatePrice() {
+    const selectElement = document.querySelector('.versionSelect');
+
+    selectElement.addEventListener('change', (event) => {
+        const result = document.querySelector('.finalPrice');
+        result.textContent = `You like ${event.target.value} $`;
+    });
+}
