@@ -1,0 +1,139 @@
+body {
+    cursor: url('../resources/pepe.gif'), auto;	
+    background: teal;
+    margin: 0px;
+    padding: 0px;
+}
+
+.welcomeSection {
+    background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url("../resources/pepe.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 300px;
+    margin: auto;  
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 5em;
+    color: #20C20E;
+    font-family: 'Fira Code', monospace;
+}
+
+.blinker {
+    animation: blinker 1.5s linear infinite;
+}
+  
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .welcomeSection {
+        font-size: 3em;
+    }
+}
+
+.window {
+    margin: 32px auto 32px auto;
+    width: 50%;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+
+@media screen and (max-width: 960px) {
+    .window {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .window {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .window {
+        width: 80%;
+    }
+}
+
+.windowContent {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 480px) {
+    .windowContent {
+        padding: 20px;
+        grid-template-columns: 1fr;
+    }
+}
+
+.description {
+    font-size: 21px;
+}
+
+.separator {
+    background: violet;
+    margin: 10px;
+}
+
+#compGIF {
+    height: 200px; 
+    width: auto; 
+    justify-self: center;
+}
+
+.buttonContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .buttonContainer {
+        padding: 5px;
+    }
+}
+
+.navbar {
+    background: silver;
+    box-shadow: inset 0 1px 0 0 #fff;
+    border-color: #dfdfdf;
+    width: 100%;
+    position: fixed;
+    margin-top: 100px;
+    bottom: 0px;
+}
+
+.navbarButtonContainer {
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.navbarButtonContainer form, button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.activeButton {
+  box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey;
+  padding: 2px 11px 0 13px;
+}
