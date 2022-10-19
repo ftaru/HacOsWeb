@@ -23,6 +23,7 @@
             </div>
             <div class="title-bar-controls">
                 <button aria-label="Maximize" onclick="toggleFullScreen()"></button>
+                <button onclick="changeTheme()"><span id="themeIcon"></span></button>
             </div>
         </div>
 
@@ -75,8 +76,9 @@
                     </div>
                 </div>
                 <p id="finalPrice">It will cost 20 $</p>
-                <div class="singleButtonContainer">
-                    <button onclick="congrats()">Buy rn!</button>
+                <div id="agreeFlag">
+                    <input type="checkbox" id="orderFlag" onclick="addBuyButton()">
+                    <label for="orderFlag">I agree with user agreement</label>
                 </div>
             </div>
             
@@ -84,7 +86,7 @@
         <!-- WindowContent End -->
 
         <!-- BottomNavbar -->
-        <nav class="navbar">
+        <nav class="navbar" id="navbarId">
             <div class="navbarButtonContainer">
                 <button onclick="location.href='index.html';">
                     Main
@@ -101,5 +103,6 @@
         </nav>
         <!-- BottomNavbar End -->
         <script src="scripts/main.js"></script>
+        <script type ="text/javascript" src="scripts/changeDOM.js"></script>
     </body>
 </html>
