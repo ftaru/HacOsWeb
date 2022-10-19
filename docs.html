@@ -23,6 +23,7 @@
         </div>
         <div class="title-bar-controls">
             <button aria-label="Maximize" onclick="toggleFullScreen()"></button>
+            <button onclick="changeTheme()"><span id="themeIcon"></span></button>
         </div>
       </div>
 
@@ -32,7 +33,7 @@
     <!-- WindowBar End -->
 
     <!-- WindowContent -->
-    <div class="window">
+    <div class="window" id="changeableWindowArea">
         <div class="title-bar">
           <div class="title-bar-text">
             Game Documentation
@@ -58,7 +59,7 @@
     <!-- WindowContent End -->
 
     <!-- BottomNavbar -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbarId">
         <div class="navbarButtonContainer">
             <button onclick="location.href='index.html';">
                 Main
@@ -75,5 +76,6 @@
     </nav>
     <!-- BottomNavbar End -->
     <script src="scripts/main.js"></script>
+    <script type ="text/javascript" src="scripts/changeTheme.js"></script>
     </body>
 </html>
